@@ -1,7 +1,7 @@
 # Contributing to dns66
 
-If you want to contribute code to DNS66, you are more than welcome to do so.
-DNS66 uses GitHub pull requests for code contributions.
+If you want to contribute code to DNS5, you are more than welcome to do so.
+DNS5 uses GitHub pull requests for code contributions.
 
 ## Pull requests
 A pull request should consist of a series of logical commits leading from a

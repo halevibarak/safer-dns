@@ -9,7 +9,7 @@
     <string name="action_import">Importer innstillinger</string>
     <string name="action_save">Ferdig</string>
     <string name="load_defaults">Last standardinnstillingene</string>
-    <string name="action_about">Om DNS66</string>
+    <string name="action_about">Om DNS5</string>
     <string name="info_app_license">Dette programmet er fri programvare: du kan distribuere det rundt og/eller modifisere den under betingelsene til GNU General Public License som publisert av Free Software Foundation, enten versjon 3 av den lisensen eller (Valgfritt) enhver senere versjon.</string>
     <string name="switch_onboot">Fortsett ved systemoppstart</string>
     <string name="activity_edit">Rediger gjenstand</string>
@@ -28,7 +28,7 @@
     <string name="notification_reconnecting">Kobler til på nytt</string>
     <string name="notification_reconnecting_error">Feil under tilkobling på nytt</string>
     <string name="notification_stopped">Stoppet</string>
-    <string name="notification_title">DNS66</string>
+    <string name="notification_title">DNS5</string>
     <string-array name="item_states">
         <item>Nekt</item>
         <item>Tillat</item>
@@ -47,10 +47,10 @@
     <string name="dns_description">Aktiver dine foretrukkede DNS-tjenere</string>
     <string name="host_description">Røde regler blokkerer, mens grønne regler tillater.</string>
     <string name="disable_notification_title">Skrur av notifikasjonen</string>
-    <string name="disable_notification_message">Å skru av notifikasjonen kan få DNS66 til å bli stoppet unner RAM-press.\n\nVil du skru av notifikasjonen?</string>
+    <string name="disable_notification_message">Å skru av notifikasjonen kan få DNS5 til å bli stoppet unner RAM-press.\n\nVil du skru av notifikasjonen?</string>
     <string name="disable_notification_ack">Skru av notifikasjonen</string>
     <string name="disable_notification_nak">Avbryt</string>
-    <string name="whitelist_description">Forbipasser DNS66 for de valgte appene</string>
+    <string name="whitelist_description">Forbipasser DNS5 for de valgte appene</string>
     <string name="switch_show_system_apps">Vis systemapper</string>
     <string name="location_dns">IP-adressen til DNS-tjeneren (IPv6 eller IPv4)</string>
     <string name="state_dns_enabled">Aktivert</string>
@@ -85,10 +85,10 @@
     <string name="legend_host_deny">Nekt tilgang til vertene i denne oppføringen</string>
     <string name="do_not_use_dns_server">Av</string>
     <string name="use_dns_server">På</string>
-    <string name="switch_onboot_description">Start DNS66 når enheten skrues på, dersom DNS66 var aktiv når enheten ble skrudd av.</string>
+    <string name="switch_onboot_description">Start DNS5 når enheten skrues på, dersom DNS5 var aktiv når enheten ble skrudd av.</string>
     <string name="activity_edit_dns_server">Rediger DNS-tjeneren</string>
     <string name="activity_edit_filter">Rediger filteret</string>
-    <string name="notification_paused_title">DNS66 ble satt på pause.</string>
+    <string name="notification_paused_title">DNS5 ble satt på pause.</string>
     <string name="notification_paused_text">Trykk for å fortsette.</string>
     <string name="notification_action_pause">Pause</string>
     <string name="whitelist_on_vpn">Ingen apper</string>

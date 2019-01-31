@@ -9,6 +9,7 @@ package comm.dns;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 
 public class InfoActivity extends AppCompatActivity {
@@ -20,5 +21,6 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_info);
 
         ((TextView) findViewById(R.id.app_version_info)).setText(getString(R.string.app_version_info, BuildConfig.VERSION_NAME));
+        ((TextView) findViewById(R.id.scrtv)).setMovementMethod(new ScrollingMovementMethod());
     }
 }

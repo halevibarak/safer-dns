@@ -35,6 +35,10 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -68,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
     private FloatingActionButton floatingActionButton;
     private ViewPager.SimpleOnPageChangeListener pageChangeListener;
     private Toolbar mToolbar;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,9 +90,11 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
         }
 
         setContentView(R.layout.activity_main);
-
+        MobileAds.initialize(this, "ca-app-pub-2275592906310972~8185658732");
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView = findViewById(R.id.adView);
+        mAdView.loadAd(adRequest);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mToolbar.setVisibility(View.GONE);
         setSupportActionBar(mToolbar);
 
         viewPager = (ViewPager) findViewById(R.id.view_pager);
@@ -126,7 +133,6 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         menu.findItem(R.id.setting_show_notification).setChecked(config.showNotification);
-        menu.findItem(R.id.setting_night_mode).setChecked(config.nightMode);
         return true;
     }
 
@@ -139,33 +145,33 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
             case R.id.action_refresh:
                 refresh();
                 break;
-            case R.id.action_load_defaults:
-                config = FileHelper.loadDefaultSettings(this);
-                FileHelper.writeSettings(this, MainActivity.config);
-                recreate();
-                break;
-            case R.id.action_import:
-                Intent intent = new Intent()
-                        .setType("*/*")
-                        .setAction(Intent.ACTION_OPEN_DOCUMENT)
-                        .addCategory(Intent.CATEGORY_OPENABLE);
-
-                startActivityForResult(intent, REQUEST_FILE_OPEN);
-                break;
-            case R.id.action_export:
-                Intent exportIntent = new Intent(Intent.ACTION_CREATE_DOCUMENT)
-                        .addCategory(Intent.CATEGORY_OPENABLE)
-                        .setType("*/*")
-                        .putExtra(Intent.EXTRA_TITLE, "dns66.json");
-
-                startActivityForResult(exportIntent, REQUEST_FILE_STORE);
-                break;
-            case R.id.setting_night_mode:
-                item.setChecked(!item.isChecked());
-                MainActivity.config.nightMode = item.isChecked();
-                FileHelper.writeSettings(MainActivity.this, MainActivity.config);
-                recreate();
-                break;
+//            case R.id.action_load_defaults:
+//                config = FileHelper.loadDefaultSettings(this);
+//                FileHelper.writeSettings(this, MainActivity.config);
+//                recreate();
+//                break;
+//            case R.id.action_import:
+//                Intent intent = new Intent()
+//                        .setType("*/*")
+//                        .setAction(Intent.ACTION_OPEN_DOCUMENT)
+//                        .addCategory(Intent.CATEGORY_OPENABLE);
+//
+//                startActivityForResult(intent, REQUEST_FILE_OPEN);
+//                break;
+//            case R.id.action_export:
+//                Intent exportIntent = new Intent(Intent.ACTION_CREATE_DOCUMENT)
+//                        .addCategory(Intent.CATEGORY_OPENABLE)
+//                        .setType("*/*")
+//                        .putExtra(Intent.EXTRA_TITLE, "dns66.json");
+//
+//                startActivityForResult(exportIntent, REQUEST_FILE_STORE);
+//                break;
+//            case R.id.setting_night_mode:
+//                item.setChecked(!item.isChecked());
+//                MainActivity.config.nightMode = item.isChecked();
+//                FileHelper.writeSettings(MainActivity.this, MainActivity.config);
+//                recreate();
+//                break;
             case R.id.setting_show_notification:
                 // If we are enabling notifications, we do not need to show a dialog.
                 if (!item.isChecked()) {
@@ -197,9 +203,9 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
                 Intent infoIntent = new Intent(this, InfoActivity.class);
                 startActivity(infoIntent);
                 break;
-            case R.id.action_logcat:
-                sendLogcat();
-                break;
+//            case R.id.action_logcat:
+//                sendLogcat();
+//                break;
         }
 
         return super.onOptionsItemSelected(item);
@@ -221,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements StartFragment.OnC
             Intent eMailIntent = new Intent(Intent.ACTION_SEND);
             eMailIntent.setType("text/plain");
             eMailIntent.putExtra(Intent.EXTRA_EMAIL, new String[] {"jak@jak-linux.org"});
-            eMailIntent.putExtra(Intent.EXTRA_SUBJECT, "DNS66 Logcat");
+            eMailIntent.putExtra(Intent.EXTRA_SUBJECT, "DNS5 Logcat");
             eMailIntent.putExtra(Intent.EXTRA_TEXT, logcat.toString());
             eMailIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(eMailIntent);

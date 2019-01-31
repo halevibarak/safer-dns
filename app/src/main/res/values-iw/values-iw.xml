@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Safer DNS</string>
+    <string name="app_shortdesc">חסימת אתרים וחיבור שרתי DNS רצויים</string>
+    <string name="custom_dns">אפשר שרתי DNS</string>
+    <string name="enable_hosts">סינון אתרים</string>
+    <string name="start_tab">התחל</string>
+    <string name="hosts_tab">אתרים</string>
+    <string name="dns_tab">שרתים</string>
+    <string name="action_export">Export settings</string>
+    <string name="action_import">Import settings</string>
+    <string name="action_save">אישור</string>
+    <string name="load_defaults">Load default settings</string>
+    <string name="action_about">אודות</string>
+    <string name="info_app_license">אפשר לעשות את האינטרנט שלך בטוח יותר - אשמח אם תנסה</string>
+    <string name="info_app_copyright" >הגדרת שרת ה - DNS ל - cleanbrowsing.org
+השרת מנסה לחסום גישה לאתרי מבוגרים (פורנוגרפיים).
+אתרי תוכן מעורבים (כמו Reddit) נחסמים גם הם.
+דומיינים זדוניים ודיוג חסומים.
+פייסבוק , וואטסאפ ואתרים דומים לא נחסמים.\n
+
+ניתן להסיר את היישום בכל עת.\n\n
+
+יישום dns אחר ינטרל את הסינון.\n
+
+האפליקצייה יוצרת vpn עבור שרתי dns.\n
+שרתים אלה שייכים "cleanbrowsing.org" (ברירת מחדל) או שרתים אחרים בטאב שרתים שיכולים להיות מהירים יותר ופחות מסוננים.\n\n
+
+חובה לציין שהאפליקצייה לא מעניקה הגנה ברמה של רימון.\n\n
+
+בעמוד החיפוש בגוגל יש למטה אפשרות הגדרות - ושם לבקש (בסלולרי חשבונות) (או search setting במחשב)\n\n
+ואז - safeSearch
+
+ב YouTube יש להגיע לעמוד הגדרות ואז כללי וסינון (או במחשב הגדרות ובתחתית העמוד יש אפשרות לבקש סינון תוכן)\n\n
+
+בחנות האפליקציות - הגדרות -> בקרת הורים\n\n
+
+ממליץ על אפליקציה (לא מושלמת) חינמית שמאפשרת בעזרת סיסמה להגביל ילד למספר מוגבל של אפליקציות KIDS PLACE</string>
+    <string name="switch_onboot">המשך מצב אחרי אתחול המכשיר</string>
+    <string name="activity_edit">עריכת פריט</string>
+    <string name="title">כותרת</string>
+    <string name="location">Location (URL or host)</string>
+    <string name="action">פעולה</string>
+    <string name="cannot_restore_previous_config">Cannot restore previous configuration: %s</string>
+    <string name="cannot_read_config">Cannot read configuration: %s</string>
+    <string name="cannot_load_default_config">Cannot read default settings: %s - This should not happen</string>
+    <string name="cannot_write_config">Cannot write configuration: %s</string>
+    <string name="action_refresh">עדכן אתרים חסומים</string>
+    <string name="notification_starting">מאתחל</string>
+    <string name="notification_running">פעיל</string>
+    <string name="notification_stopping">עוצר</string>
+    <string name="notification_waiting_for_net">ממתין לרשת אינטרנט</string>
+    <string name="notification_reconnecting">מתחבר שוב</string>
+    <string name="notification_reconnecting_error">תקלת חיבור</string>
+    <string name="notification_stopped">לא פעיל</string>
+    <string name="notification_title">אינטרנט</string>
+    <string-array name="item_states">
+        <item>דחה</item>
+        <item>אפשר</item>
+        <item>התעלם</item>
+    </string-array>
+    <!-- Translate with something like <Language> Translation: Your Name -->
+    <string name="app_version_info">Version: %s</string>
+    <string name="missing_hosts_files_message">Some of your configured (non-ignored) hosts files are missing.\n\nUse the ‘Refresh’ action to download hosts files.\n\nDo you still want to continue?</string>
+    <string name="missing_hosts_files_title">Missing hosts file</string>
+    <string name="button_no">לא</string>
+    <string name="button_yes">כן</string>
+    <string name="whitelist_tab">אפליקציות</string>
+    <string name="show_notification">הצג התראות</string>
+    <string name="could_not_configure_vpn_service">Could not configure VPN service - Check if you use an always on VPN service like WiFi Assistant and disable it</string>
+    <string name="dns_description">אפשר שרתי DNS מעודפים</string>
+    <string name="host_description">Red rules block, green rules allow</string>
+    <string name="disable_notification_title">השבת נוטיפיקציות</string>
+    <string name="disable_notification_message">השבתת ההתראות עלולה לגרום לאפליקצייה לעצור - האם ברצונך להשבית את הופעת ההתראות?</string>
+    <string name="disable_notification_ack">השבת התראות</string>
+    <string name="disable_notification_nak">בטל</string>
+    <string name="whitelist_description">עקוף סינון בעבור אפליקצית מסומנות</string>
+    <string name="switch_show_system_apps">הצג אפליקציות מערכת</string>
+    <string name="location_dns">IP address of DNS server (IPv4 or IPv6)</string>
+    <string name="state_dns_enabled">מאופשר</string>
+    <string name="host_update_error_item">Error %1$d: %2$s</string>
+    <string name="update_incomplete">Update incomplete</string>
+    <string name="update_incomplete_description">Some host files could not be downloaded. If files were previously downloaded, old versions will continue to be used.</string>
+    <string name="updating_hostfiles">Updating hostfiles</string>
+    <string name="action_use_file">Use file</string>
+    <string name="persistable_uri_permission_failed">Cannot use the requested file: Not permitted to persistently use requested file</string>
+    <string name="updating_n_host_files">Updating %1$d host files</string>
+    <string name="could_not_update_all_hosts">Could not update all hostfiles</string>
+    <string name="permission_denied">הרשאה נדחתה</string>
+    <string name="invalid_url_s">Invalid URL: %1$s</string>
+    <string name="file_not_found">File not found</string>
+    <string name="unknown_error_s">Unexpected error: %1$s</string>
+    <string name="requested_timed_out">Request timed out</string>
+    <string name="action_delete">מחק</string>
+    <string name="night_mode">Dark Theme</string>
+    <string name="expand_bar_toggle_expand">Open details panel</string>
+    <string name="expand_bar_toggle_close">Close details panel</string>
+    <string name="expand_bar_expanded">פתוח</string>
+    <string name="expand_bar_closed">בגור</string>
+    <string name="action_stop">עצור</string>
+    <string name="action_start">התחל</string>
+    <string name="automatic_refresh">עדכן כל יום</string>
+    <string name="automatic_refresh_description">Daily updates occur when charging, idle, and on an unmetered network.</string>
+    <string name="watchdog">עקוב אחרי החיבור</string>
+    <string name="watchdog_description">בדוק את החיבור במרווחים ארוכים יותר ויותר וחבר מחדש אם הוא הפסיק לפעול</string>
+    <string name="legend_host_intro">Entries are processed in order. If multiple entries contain the same host, the last entry is applied. The actions are:</string>
+    <string name="legend_host_ignore">Ignore this entry</string>
+    <string name="legend_host_allow">Allow access to hosts in this entry</string>
+    <string name="legend_host_deny">Deny access to hosts in this entry</string>
+    <string name="do_not_use_dns_server">כבוי</string>
+    <string name="use_dns_server">דלוק</string>
+    <string name="switch_onboot_description">התחל אפליקציה בהדלקת מכשיר באם האפליקציה הייתה דלוקה לפני הכיבוי</string>
+    <string name="activity_edit_dns_server">ערוך DNS server</string>
+    <string name="activity_edit_filter">ערוך Filter</string>
+    <string name="notification_paused_title">paused</string>
+    <string name="notification_paused_text">לחץ להתחיל </string>
+    <string name="notification_action_pause">הפסק</string>
+    <string name="whitelist_on_vpn">אף אפליקציה</string>
+    <string name="whitelist_not_on_vpn">כל האפליקצית</string>
+    <string name="whitelist_intelligent">אפליקציות מערכת למעט דפדפנים</string>
+    <string name="ipv6_support_description">Disable this if your network does not use IPv6 or you cannot start the service.</string>
+    <string name="ipv6_support">IPv6 support</string>
+    <string name="action_logcat">Logcat</string>
+    <string name="notifications_running">מצב שירות סינון</string>
+    <string name="notifications_running_desc">Notifications to interact with running service</string>
+    <string name="notifications_update">מצב</string>
+    <string name="notifications_update_desc">התראה על עדכון אתרים חסומים</string>
+    <string name="notifications_paused">הפסקת שירות סינון</string>
+    <string name="notifications_paused_desc">התחל התראה אחרי הפסקה</string>
+    <string name="notifications_group_service">שליטה בשירות</string>
+    <string name="notifications_group_updates">עדכונים</string>
+    <string name="start_title">אינטרנט בטוח יותר</string>
+    <string name="start_text">יש להזין סיסמה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
+    <string name="submit_">אישור</string>
+    <string name="start_text_">יש להזין את הסיסמה שהותקנה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
+    <string name="cleanSay"><![CDATA[The default DNS set to CleanBrowsing -> they say that they Blocks access to all adult, pornographic and explicit sites. It also blocks proxy and VPN domains that are used to bypass the filters. Mixed content sites (like Reddit) are also blocked. Malicious and Phishing domains are blocked.]]></string>
+    <string-array name="whitelist_defaults">
+        <item>כל האפליקציות לא עוקפות סינון</item>
+        <item>כל האפליקציות עוקפות סינון</item>
+        <item>אפליקציות מערכת עוקפות סינון</item>
+    </string-array>
+</resources>

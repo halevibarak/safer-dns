@@ -495,7 +495,7 @@ class AdVpnThread implements Runnable, DnsPacketProxy.EventLoop {
 
         // Create a new interface using the builder and save the parameters.
         ParcelFileDescriptor pfd = builder
-                .setSession("DNS66")
+                .setSession("DNS5")
                 .setConfigureIntent(
                         PendingIntent.getActivity(vpnService, 1, new Intent(vpnService, MainActivity.class),
                                 PendingIntent.FLAG_CANCEL_CURRENT)).establish();
