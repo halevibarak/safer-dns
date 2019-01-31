@@ -6,8 +6,11 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.util.Log;
 
-import org.jak_linux.dns66.Configuration;
-import org.jak_linux.dns66.SingleWriterMultipleReaderFile;
+import comm.dns.Configuration;
+import comm.dns.SingleWriterMultipleReaderFile;
+import comm.dns.db.RuleDatabaseItemUpdateRunnable;
+import comm.dns.db.RuleDatabaseUpdateTask;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

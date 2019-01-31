@@ -4,51 +4,59 @@
   "autoStart": true,
   "showNotification": true,
   "nightMode": false,
-  "watchDog": false,
-  "ipV6Support": true,
+  "watchDog": true,
+  "ipV6Support": false,
   "dnsServers": {
-    "enabled": false,
+    "enabled": true,
     "items": [
       {
-        "title": "Chaos Computer Club (DE)",
-        "location": "213.73.91.35",
+        "title": "safer cleanbrowsing",
+        "location": "185.228.168.168",
         "state": 1
       },
       {
-        "title": "Digitalcourage e.V. (DE)",
-        "location": "46.182.19.48",
+        "title": "safer cleanbrowsing",
+        "location": "185.228.169.168",
         "state": 1
       },
       {
-        "title": "AS250.NET (DE)",
-        "location": "194.150.168.168",
-        "state": 1
-      },
-      {
-        "title": "dns.watch server 1 (DE)",
-        "location": "84.200.69.80",
-        "state": 1
-      },
-      {
-        "title": "dns.watch server 2 (DE)",
-        "location": "84.200.70.40",
-        "state": 1
-      },
-      {
-        "title": "ISC (US)",
-        "location": "204.152.184.76",
+        "title": "safer opendns cisco",
+        "location": "208.67.222.123",
         "state": 0
       },
       {
-        "title": "CloudFlare DNS (1)",
+        "title": "safer opendns cisco",
+        "location": "208.67.220.123",
+        "state": 0
+      },
+      {
+        "title": "fast google",
+        "location": "8.8.8.8",
+        "state": 0
+      },{
+        "title": "fast google",
+        "location": "8.8.4.4",
+        "state": 0
+      },
+      {
+        "title": "fast Cloudflare",
         "location": "1.1.1.1",
         "state": 0
-      },
-      {
-        "title": "CloudFlare DNS (2)",
+      },{
+        "title": "fast Cloudflare",
         "location": "1.0.0.1",
         "state": 0
+      },
+      {
+        "title": "fast quad9",
+        "location": "9.9.9.9",
+        "state": 0
+      },{
+        "title": "fast quad9",
+        "location": "149.112.112.112",
+        "state": 0
       }
+
     ]
   },
   "hosts": {

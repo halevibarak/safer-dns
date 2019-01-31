@@ -4,7 +4,10 @@ import android.content.pm.PackageManager;
 import android.net.VpnService;
 import android.util.Log;
 
-import org.jak_linux.dns66.Configuration;
+import comm.dns.Configuration;
+import comm.dns.vpn.AdVpnService;
+import comm.dns.vpn.AdVpnThread;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

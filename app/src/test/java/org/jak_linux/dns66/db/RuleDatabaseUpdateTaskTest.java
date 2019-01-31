@@ -6,7 +6,9 @@ import android.content.UriPermission;
 import android.net.Uri;
 import android.util.Log;
 
-import org.jak_linux.dns66.Configuration;
+import comm.dns.Configuration;
+import comm.dns.db.RuleDatabaseUpdateTask;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

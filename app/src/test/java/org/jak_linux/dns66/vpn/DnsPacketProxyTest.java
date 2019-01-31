@@ -3,10 +3,12 @@ package org.jak_linux.dns66.vpn;
 import android.content.Context;
 import android.util.Log;
 
-import org.jak_linux.dns66.Configuration;
-import org.jak_linux.dns66.db.RuleDatabase;
+import comm.dns.Configuration;
+import comm.dns.db.RuleDatabase;
+import comm.dns.vpn.AdVpnThread;
+import comm.dns.vpn.DnsPacketProxy;
+
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -40,9 +42,7 @@ import java.net.InetAddress;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.anyString;
 import static org.xbill.DNS.Rcode.NOERROR;
-import static org.xbill.DNS.Rcode.NXDOMAIN;
 
 /**
  * Various tests for the core DNS packet proxying code.

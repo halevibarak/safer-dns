@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">DNS66</string>
+    <string name="app_name" translatable="false">DNS5</string>
     <string name="app_shortdesc">Host blocking and custom DNS servers</string>
     <string name="custom_dns">Custom DNS servers</string>
     <string name="enable_hosts">Filter hosts</string>
@@ -108,6 +108,10 @@
     <string name="notifications_paused_desc">Notifications to resume after pausing</string>
     <string name="notifications_group_service">Service control</string>
     <string name="notifications_group_updates">Updates</string>
+    <string name="start_title">DNS5</string>
+    <string name="start_text">יש להזין סיסמה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
+    <string name="submit_">אישור</string>
+    <string name="start_text_">יש להזין את הסיסמה שהותקנה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
     <string-array name="whitelist_defaults">
         <item>No apps bypass by default</item>
         <item>All apps bypass by default</item>

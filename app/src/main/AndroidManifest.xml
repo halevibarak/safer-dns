@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.jak_linux.dns66">
+    xmlns:tools="http://schemas.android.com/tools"
+
+    package="comm.dns">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,9 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MainActivity"
+            android:name="comm.dns.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
@@ -28,28 +32,28 @@
         </activity>
 
         <activity
-            android:name=".InfoActivity"
+            android:name="comm.dns.InfoActivity"
             android:label="@string/action_about"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="comm.dns.MainActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ItemActivity"
+            android:name="comm.dns.ItemActivity"
             android:label="@string/activity_edit"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="comm.dns.MainActivity"
             android:theme="@style/AppTheme" />
         <service
-            android:name=".vpn.AdVpnService"
+            android:name="comm.dns.vpn.AdVpnService"
             android:permission="android.permission.BIND_VPN_SERVICE">
             <intent-filter>
                 <action android:name="android.net.VpnService" />
             </intent-filter>
         </service>
         <service
-            android:name=".db.RuleDatabaseUpdateJobService"
+            android:name="comm.dns.db.RuleDatabaseUpdateJobService"
             android:permission="android.permission.BIND_JOB_SERVICE"
             android:exported="true"/>
         <receiver
-            android:name=".vpn.BootComplete"
+            android:name="comm.dns.vpn.BootComplete"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

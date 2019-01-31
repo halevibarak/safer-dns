@@ -8,7 +8,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                tools:context="org.jak_linux.dns66.ItemActivity">
+                tools:context="org.jak_linux.dns66.comm.jak_linux.dns66.ItemActivity">
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/title_layout"
@@ -48,7 +48,7 @@
         android:checked="true"
         android:text="@string/state_dns_enabled"/>
 
-    <org.jak_linux.dns66.SquareImageView
+    <comm.dns.SquareImageView
         android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

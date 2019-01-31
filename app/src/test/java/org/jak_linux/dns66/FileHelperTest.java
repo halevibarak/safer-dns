@@ -30,6 +30,9 @@ import java.io.InputStream;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 
+import comm.dns.Configuration;
+import comm.dns.FileHelper;
+
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.*;
 import static org.powermock.api.mockito.PowerMockito.*;
