@@ -11,6 +11,8 @@ Set VPN with custom easy to change DNS server
 
 The default DNS set to CleanBrowsing -> they say that they Blocks access to all adult, pornographic and explicit sites. It also blocks proxy and VPN domains that are used to bypass the filters. Mixed content sites (like Reddit) are also blocked. Malicious and Phishing domains are blocked.
 
+Got option to block facebook;
+
 Also you can set DNS server to google, Quad9 and more unsafe dns servers or OpenDNS safe DNS server
 
 Improper use can shutdown your Network -> protected with pin code from kids
