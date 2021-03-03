@@ -5,7 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Rule;
@@ -19,8 +19,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import comm.dns.Configuration;
 
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.*;
@@ -159,7 +157,6 @@ public class ConfigurationTest {
         assertNotNull(config.whitelist.itemsOnVpn);
         assertNotNull(config.dnsServers);
         assertNotNull(config.dnsServers.items);
-        assertTrue(config.whitelist.items.contains("com.android.vending"));
         assertTrue(config.ipV6Support);
         assertFalse(config.watchDog);
         assertFalse(config.nightMode);

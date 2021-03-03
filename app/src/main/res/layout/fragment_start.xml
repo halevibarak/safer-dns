@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="comm.dns.main.StartFragment">
+    android:orientation="vertical">
 
     <include layout="@layout/extra_bar_start" />
 
     <com.goldenpie.devs.pincodeview.PinCodeView
         android:id="@+id/ci_drawable"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_gravity="center"
         app:pcv_pin_error_color="@color/accent"
         app:pcv_pin_inner_alpha="1"
-        app:pcv_pin_inner_color="@android:color/white"
+        app:pcv_pin_inner_color="@color/accent"
         app:pcv_pin_length="3"
         app:pcv_pin_outer_color="@color/colorPrimary"
-        app:pcv_pin_outer_drawable="@mipmap/ic_launcher"
+        app:pcv_pin_outer_drawable="@drawable/selector_pincode"
         app:pcv_pin_tint_inner="false"
         app:pcv_pin_tint_outer="true"
         app:pcv_pin_type="unlock" />
 
-    <comm.dns.SquareImageView
+    <org.jak_linux.dns66.SquareImageView
         android:id="@+id/state_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"

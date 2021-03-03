@@ -10,17 +10,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="comm.dns.InfoActivity">
+    tools:context="org.jak_linux.dns66.InfoActivity">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         app:srcCompat="@mipmap/app_icon_large" />
 
 
     <TextView
-        android:layout_marginTop="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_shortdesc"
@@ -30,7 +29,6 @@
         android:id="@+id/app_version_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:text="@string/app_version_info"
         android:textAlignment="center" />
 
@@ -40,25 +38,28 @@
         android:layout_height="wrap_content"
         android:autoLink="web"
         android:text="@string/website"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:textAlignment="center" />
-
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/info_app_license"
-        android:textAlignment="center"/>
-
+        android:text="@string/info_app_copyright"
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/scrtv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
-        android:scrollbars = "vertical"
-        android:text="@string/info_app_copyright"
+        android:text="@string/translator_credits"
         android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/info_app_license"
+        android:textAlignment="center"/>
 
 </LinearLayout>

@@ -3,11 +3,11 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context="org.jak_linux.dns66.comm.jak_linux.dns66.main.DNSFragment">
+                tools:context="org.jak_linux.dns66.main.DNSFragment">
 
     <include layout="@layout/extra_bar_dns"/>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/dns_entries"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

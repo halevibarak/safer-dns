@@ -130,6 +130,7 @@
     <string name="notifications_group_updates">עדכונים</string>
     <string name="start_title">אינטרנט בטוח יותר</string>
     <string name="start_text">יש להזין סיסמה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
+    <string name="start_renter">יש להזין סיסמה</string>
     <string name="submit_">אישור</string>
     <string name="start_text_">יש להזין את הסיסמה שהותקנה - תמיד ניתן להסיר את האפליקציה ולהתחיל מחדש</string>
     <string name="cleanSay"><![CDATA[The default DNS set to CleanBrowsing -> they say that they Blocks access to all adult, pornographic and explicit sites. It also blocks proxy and VPN domains that are used to bypass the filters. Mixed content sites (like Reddit) are also blocked. Malicious and Phishing domains are blocked.]]></string>

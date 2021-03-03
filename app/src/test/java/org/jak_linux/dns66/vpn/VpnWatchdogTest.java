@@ -2,9 +2,7 @@ package org.jak_linux.dns66.vpn;
 
 import android.util.Log;
 
-import comm.dns.vpn.AdVpnThread;
-import comm.dns.vpn.VpnWatchdog;
-
+import org.jak_linux.dns66.FileHelper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

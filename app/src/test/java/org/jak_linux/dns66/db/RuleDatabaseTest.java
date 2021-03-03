@@ -3,10 +3,8 @@ package org.jak_linux.dns66.db;
 import android.content.Context;
 import android.util.Log;
 
-import comm.dns.Configuration;
-import comm.dns.FileHelper;
-import comm.dns.db.RuleDatabase;
-
+import org.jak_linux.dns66.Configuration;
+import org.jak_linux.dns66.FileHelper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -7,4 +7,8 @@
     <color name="colorAccent">#40c4ff</color>
     <color name="stateError">#F44336</color>
     <color name="red">#ff0000</color>
+    <color name="geyser2">#ccd3e0</color>
+    <color name="azureRadiance">#0089ff</color>
+    <color name="athensGray">#eceef4</color>
+
 </resources>

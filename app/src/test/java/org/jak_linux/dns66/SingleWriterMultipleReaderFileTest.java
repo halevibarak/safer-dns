@@ -11,8 +11,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import comm.dns.SingleWriterMultipleReaderFile;
-
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.*;
 import static org.powermock.api.mockito.PowerMockito.*;

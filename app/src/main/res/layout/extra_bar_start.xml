@@ -61,7 +61,6 @@
             android:paddingBottom="8dp"
             android:paddingTop="8dp"
             android:saveEnabled="false"
-            android:visibility="gone"
             android:text="@string/watchdog"/>
 
         <TextView
@@ -69,7 +68,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
-            android:visibility="gone"
             android:text="@string/watchdog_description"/>
 
         <Switch
@@ -79,7 +77,6 @@
             android:paddingBottom="8dp"
             android:paddingTop="8dp"
             android:saveEnabled="false"
-            android:visibility="gone"
             android:text="@string/ipv6_support"/>
 
         <TextView
@@ -87,7 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp"
-            android:visibility="gone"
             android:text="@string/ipv6_support_description"/>
     </LinearLayout>
 </LinearLayout>

@@ -4,10 +4,7 @@ import android.content.pm.PackageManager;
 import android.net.VpnService;
 import android.util.Log;
 
-import comm.dns.Configuration;
-import comm.dns.vpn.AdVpnService;
-import comm.dns.vpn.AdVpnThread;
-
+import org.jak_linux.dns66.Configuration;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -133,7 +130,7 @@ public class AdVpnThreadTest {
         item0.state = Configuration.Item.STATE_ALLOW;
         item1.location = "127.0.0.1";
         item1.state = Configuration.Item.STATE_ALLOW;
-        Set<InetAddress> servers = new HashSet<>();
+        List<InetAddress> servers = new ArrayList<>();
 
         assertTrue(thread.hasIpV6Servers(config, servers));
         config.ipV6Support = false;

@@ -111,6 +111,7 @@
     <string name="notifications_group_updates">Updates</string>
     <string name="start_title">safer DNS</string>
     <string name="start_text" tools:ignore="ExtraTranslation">you should enter password to protect yor kids or phone network</string>
+    <string name="start_renter" tools:ignore="ExtraTranslation">enter password</string>
     <string name="submit_">submit</string>
     <string name="start_text_">you should enter password - you can always remove and reinstall the app</string>
     <string name="cleanSay">set DNS server to - cleanbrowsing.org - 185.228.168.168 and 185.228.169.168
